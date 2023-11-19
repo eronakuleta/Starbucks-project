@@ -105,4 +105,36 @@ section a {
 .btn-dark:hover{
      background-color: #333;
 }
-   
+/*------------Box--------------*/
+.box-a{
+    background-color: #006241;
+    background-size: 100% 100%;
+    margin-top: 35px;
+}
+.box{
+    margin-bottom: 40px;
+}
+.box-text{
+    max-width: 600px;
+    text-align: center;
+    justify-self: center;
+    padding: 20px 0;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 30px;
+}
+.box-text .btn {
+    margin-top: 20px;
+}
+.box-f .box-text {
+    max-width: 600px;
+}
+
+  /*Grid Styles*/
+.grid-col-2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+}
