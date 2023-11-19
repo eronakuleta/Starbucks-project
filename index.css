@@ -111,6 +111,18 @@ section a {
     background-size: 100% 100%;
     margin-top: 35px;
 }
+.box-b{
+    background-color: #ef3340;
+}
+.box-c{
+      background-color: #76232f;
+}
+.box-d{
+    background-color: #1e3932;
+}
+.box-e{
+    background-color: #dc0032;
+}
 .box{
     margin-bottom: 40px;
 }
@@ -138,3 +150,6 @@ section a {
     align-items: center;
     justify-content: space-between;
 }
+.grid-reversed :first-child{
+    order: 2;
+  }
