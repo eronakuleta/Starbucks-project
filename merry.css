@@ -118,5 +118,6 @@ section a {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
     margin-top: 40px;
+    gap: 2rem;
     justify-content:space-between;
   }
