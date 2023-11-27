@@ -113,7 +113,36 @@ section a {
     font-size: 80px;
     padding: 45px 0 45px;
    }
-   /*Grid Styles*/
+  .box-a .box-text{
+    background-color:#006241;
+    flex-direction: column;
+    text-align: center;
+    margin-top: -6px;
+    height: max-content;
+  }
+  .box-b .box-text{
+    background-color: #dc0032;
+    flex-direction: column;
+    text-align: center;
+    margin-top: -6px;
+    height: max-content;
+}
+.box-c .box-text{
+    background-color: #76232f;
+    flex-direction: column;
+    text-align: center;
+    margin-top: -6px;
+    height: max-content;
+
+}
+.box-text{
+    background-attachment: fixed;
+    max-width: 1000px;
+    padding: 16px 0 32px 16px;
+    margin: 0 auto;
+    color:#fff;
+  }
+  /*Grid Styles*/
  .grid-col-2{
     display: grid;
     grid-template-columns: repeat(2, 2fr);
