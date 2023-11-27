@@ -113,3 +113,10 @@ section a {
     font-size: 80px;
     padding: 45px 0 45px;
    }
+   /*Grid Styles*/
+ .grid-col-2{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    margin-top: 40px;
+    justify-content:space-between;
+  }
