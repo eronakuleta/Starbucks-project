@@ -31,3 +31,9 @@ h2{
     color: #fff;
     text-align: center;
 }
+.inputbox{
+    position: relative;
+    margin: 20px 0;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+}
