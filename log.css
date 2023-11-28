@@ -40,7 +40,8 @@ h2{
 .inputbox label{
     position: absolute;
     top: 50%;
-    left: 4pxs;
+    left: 5pxs;
+    transform: translateY(-50%);
     color: #fff;
     font-size: 1 em;
     pointer-events: none;
