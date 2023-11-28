@@ -24,7 +24,7 @@ section{
     backdrop-filter: blur(15px);
     display: flex;
     justify-content: center;
-    align-items
+    align-items: center;
 }
 h2{
     font-size: 2em;
