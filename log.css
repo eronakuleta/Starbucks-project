@@ -25,6 +25,7 @@ section{
     display: flex;
     justify-content: center;
     align-items
+}
 h2{
     font-size: 2em;
     color: #fff;
