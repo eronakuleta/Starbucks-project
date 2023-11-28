@@ -37,3 +37,13 @@ h2{
     width: 310px;
     border-bottom: 2px solid #fff;
 }
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 4pxs;
+    color: #fff;
+    font-size: 1 em;
+    pointer-events: none;
+    transition: .5s;
+
+}
