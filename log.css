@@ -78,3 +78,15 @@ input:valid ~ label{
     justify-content: center;
 
   }
+  .forget label input{
+    margin-right: 5px;
+
+  }
+  .forget label a{
+    color: #fff;
+    text-decoration: none;
+  }
+  .forget label hover{
+    text-decoration: underline;
+
+  }
