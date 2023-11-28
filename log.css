@@ -62,3 +62,19 @@ input:valid ~ label{
     padding: 0 35px 0 5px;
     color: #fff;
 }
+.inputbox  icon-icon{
+    position: absolute;
+    right: 8px;
+    color:#fff;
+    font-size: 1.2em;
+    top: 15px;
+
+  }
+  .forget{
+    margin: -15px 0 -15px;
+    font-size: .9em;
+    color: #fff;
+    display: flex;
+    justify-content:space-between;
+
+  }
