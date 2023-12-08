@@ -105,3 +105,87 @@ section a {
 .btn-dark:hover{
      background-color: #333;
 }
+/*---------CARDSSSSSSS----------*/
+.cards{
+    width: 20%;
+    display: inline-block;
+    border-radius: 5px ;
+    margin:40px;
+    box-shadow: 2px 2px 10px black;
+   }
+   .image img{
+    width: 100%;
+    border-top-right-radius: 8px ;
+    border-top-Left-radius: 8px ;
+   }
+   .title{
+    text-align: center;
+    padding: 5px;
+   }
+   .des{
+    text-align: center;
+    padding: 4px;
+   }
+   button{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: white;
+    border: 1px solid black;
+    padding:5px;
+    border-radius: 5px;
+    cursor: pointer;
+
+   }
+   button:hover{
+    background-color: black;
+    color: white;
+    transition: .5s;
+   }
+   /*-----------------------*/
+   .body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #F1F4FD;
+   }
+   .container{
+    max-width: 1200px;
+    width: 95%;
+   }
+   .slider-wrapper .slider-button{
+    position: absolute;
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    color: #fff;
+    border: none;
+    outline: none;
+    background: gold;
+    font-size: 2.2rem;
+    cursor: pointer;
+    border-radius: 50%;
+   }
+   .slider-wrapper .slider-button#prev-slide{
+    left: -20px;
+   }
+   .slider-wrapper .slider-button#next-slide{
+    left: -20px;
+   }
+   .heading{
+    text-align:center;
+    text-transform: uppercase;
+    padding: 50px;
+   }
+   .heading span{
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--second-color);
+   }
+   .heading h1{
+    font-size: 5rem;
+    color:rgb(0, 100, 0);
+   }
+
+   /*-------SLIDER----------*/
+   
