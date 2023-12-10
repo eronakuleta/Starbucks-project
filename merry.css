@@ -74,6 +74,12 @@ section a {
 .navbar-nav-right li:nth-child(2){
     margin: 0 5px;
 }
+.fa-shopping-cart{
+    margin-left: 10px;
+}
+.fa-shopping-cart{
+    margin-right: 20px;
+}
 /*-------Buttons----------*/
 .btn{
     cursor: pointer;
@@ -99,8 +105,8 @@ section a {
      color: #fff;
 }
 .btn-dark{
-       background-color:#000;
-       color:#fff;
+    background-color:darkgreen;
+    color:#fff;
 }
 .btn-dark:hover{
      background-color: #333;
