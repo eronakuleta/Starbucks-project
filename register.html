@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register-form</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+
+<body>
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                <form action="" onsubmit="return validation()">
+
+                    <div class="register">
+                        <p>Register</p>
+                    </div>
+
+                    <div class="name">
+                        <input class="input" type="text" id="name" placeholder="*First name" required><label
+                            class="error-label" id="idname-error"></label>
+                    </div>
+
+                    <div class="surname">
+                        <input class="input" type="text" id="surname" placeholder="*Last name" required><label
+                            class="error-label" id="idsurname-error"></label>
+                    </div>
+
+                    <div class="password">
+                        <input class="input" type="password" id="password" placeholder="*Password" required><label
+                            class="error-label" id="idpassword-error"></label>
+                    </div>
+
+                    <div class="passwordd">
+                        <input class="input" type="password" id="passwordd" placeholder="Password" required><label
+                            class="error-label" id="idpasswordd-error"></label>
+                    </div>
+
+                    <div class="email">
+                        <input class="input" type="email" id="email" placeholder="*Email address" required><label
+                            class="error-label" id="idemail-error"></label>
+                    </div>
+
+                    <div class="signup">
+                        <input class="submit" id="submitButton" type="submit" name="submit" onclick="return validation()"
+                            value="Signup" required>
+                    </div>
+
+                    <div class="already">
+                        <p>Already have an account ?<a href="login.html" target="_blank"><br>Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script>
+  
+        let NameRegex = /^[A-Z]\w[a-z]{2,10}$/;
+        let PasswordRegex = /^(?=.*[a-zA-Z])(?=.*[0-9]).{7,15}$/;
+        let EmailRegex = /\w[a-zA-Z0-9]+@[a-z]{3,10}[._-]\w{2,4}$/;
+        let SurnameRegex = /^[A-Z]\w[a-z]{3,16}$/;
+
+        function validation() {
+        
+            let nameInput = document.getElementById('name');
+            let surnameInput = document.getElementById('surname');
+            let passwordInput = document.getElementById('password');
+            let passwordRepeatInput = document.getElementById('passwordd');
+            let emailInput = document.getElementById('email');
+            let nameError = document.getElementById('idname-error');
+            let surnameError = document.getElementById('idsurname-error'); // Corrected ID here
+            let passwordError = document.getElementById('idpassword-error');
+            let passwordRepeatError = document.getElementById('idpasswordd-error'); // Corrected ID here
+            let emailError = document.getElementById('idemail-error');
+
+            nameError.innerText = '';
+            surnameError.innerText = '';
+            passwordError.innerText = '';
+            passwordRepeatError.innerText = '';
+            emailError.innerText = '';
+
+            if (!NameRegex.test(nameInput.value)) {
+                nameError.innerText = 'Invalid Name';
+                return false;
+            }
+
+            if (!SurnameRegex.test(surnameInput.value)) {
+                surnameError.innerText = 'Invalid Surname';
+                return false;
+            }
+
+        
+            if (!PasswordRegex.test(passwordInput.value)) {
+                passwordError.innerText = 'Invalid Password';
+                return false;
+            }
+
+            if (passwordInput.value !== passwordRepeatInput.value) {
+                passwordRepeatError.innerText = 'Passwords do not match';
+                return false;
+            }
+
+            if (!EmailRegex.test(emailInput.value)) {
+                emailError.innerText = 'Invalid Email';
+                return false;
+            }
+
+            alert('Registration successful!');
+            return true;
+        }
+    </script>
+</body>
+
+</html>
